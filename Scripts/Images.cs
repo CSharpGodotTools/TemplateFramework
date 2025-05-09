@@ -2,5 +2,5 @@ namespace Template;
 
 public class Images
 {
-    public const string GearIcon = "res://Template/Sprites/Icons/Gear/GearIcon.svg";
+    public const string GearIcon = "res://addons/Template/Sprites/Icons/Gear/GearIcon.svg";
 }
