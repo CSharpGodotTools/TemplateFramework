@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace Template.UI;
 
+// Currently unused as unsure why this was needed in the first place..
 public partial class UIManager : Node
 {
     private static readonly List<Control> _rootControls = [];
