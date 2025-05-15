@@ -11,9 +11,9 @@ public abstract class GamePacket
 {
     private PropertyInfo[] _cachedProperties;
 
-    public static int MaxSize { get; } = 8192;
+    public static int MaxSize => 8192;
 
-    protected Peer[] Peers { get; set; }
+    protected Peer[] Peers { get; private set; }
     protected byte ChannelId { get; }
 
     // Packets are reliable by default
@@ -25,7 +25,7 @@ public abstract class GamePacket
     {
         using PacketWriter writer = new();
         writer.Write(GetOpcode());
-        this?.Write(writer);
+        Write(writer);
 
         _data = writer.Stream.ToArray();
         _size = writer.Stream.Length;

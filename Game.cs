@@ -3,7 +3,7 @@ using static Template.SceneManager;
 
 namespace Template;
 
-public partial class Game
+public static class Game
 {
     public static void SwitchScene(string scene, TransType transType = TransType.None)
     {

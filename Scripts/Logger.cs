@@ -49,7 +49,7 @@ public class Logger
 
         string message = messageBuilder.ToString().Trim(); // Remove the trailing space
 
-        LogInfo logInfo = new(LoggerOpcode.Message, new LogMessage(message), BBColor.Gray);
+        LogInfo logInfo = new(LoggerOpcode.Message, new LogMessage(message));
 
         _messages.Enqueue(logInfo);
     }
@@ -138,11 +138,11 @@ public class Logger
                 break;
 
             case LoggerOpcode.Exception:
-                PrintErr(result.Data.Message, result.Color);
+                PrintErr(result.Data.Message);
 
                 if (result.Data is LogMessageTrace exceptionData && exceptionData.ShowTrace)
                 {
-                    PrintErr(exceptionData.TracePath, BBColor.DarkGray);
+                    PrintErr(exceptionData.TracePath);
                 }
 
                 Console.ResetColor();
@@ -173,7 +173,7 @@ public class Logger
         if (filePath.Contains("Scripts"))
         {
             // Ex: Scripts/Main.cs:23
-            tracePath = $"  at {filePath.Substring(filePath.IndexOf("Scripts"))}:{lineNumber}";
+            tracePath = $"  at {filePath.Substring(filePath.IndexOf("Scripts", StringComparison.Ordinal))}:{lineNumber}";
             tracePath = tracePath.Replace(Path.DirectorySeparatorChar, '/');
         }
         else
@@ -194,7 +194,7 @@ public class Logger
         ));
     }
 
-    private void Print(object v, BBColor color)
+    private static void Print(object v, BBColor color)
     {
         //Console.ForegroundColor = color;
 
@@ -209,7 +209,7 @@ public class Logger
         }
     }
 
-    private void PrintErr(object v, BBColor color)
+    private static void PrintErr(object v)
     {
         //Console.ForegroundColor = color;
         GD.PrintErr(v);

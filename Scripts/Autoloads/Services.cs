@@ -50,7 +50,6 @@ public partial class Services : Node
         {
             //GD.Print($"Registering service: {node.GetType().Name}");
             AddService(node);
-            return;
         }
     }
 

@@ -86,7 +86,7 @@ public partial class AudioManager : Node
     /// </summary>
     public static void FadeOutSFX(double fadeTime = 1)
     {
-        foreach (AudioStreamPlayer audioPlayer in _sfxPlayersParent.GetChildren())
+        foreach (AudioStreamPlayer audioPlayer in _sfxPlayersParent.GetChildren<AudioStreamPlayer>())
         {
             new GTween(audioPlayer)
                 .Animate(AudioStreamPlayer.PropertyName.VolumeDb, -80, fadeTime);

@@ -126,7 +126,7 @@ public class PacketReader : IDisposable
             }
 
             // Return list as T
-            return (T)(object)list;
+            return (T)list;
         }
 
         // Check if type is dictionary
@@ -149,7 +149,7 @@ public class PacketReader : IDisposable
             }
 
             // Return dictionary as T
-            return (T)(object)dict;
+            return (T)dict;
         }
 
         // Throw exception for unsupported generic type

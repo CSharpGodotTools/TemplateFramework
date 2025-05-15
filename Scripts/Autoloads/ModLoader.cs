@@ -7,7 +7,7 @@ using System.Text.Json;
 
 namespace Template.UI;
 
-public partial class ModLoaderUI
+public class ModLoaderUI
 {
     public static Dictionary<string, ModInfo> Mods { get; } = [];
 
