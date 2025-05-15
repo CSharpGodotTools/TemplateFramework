@@ -18,15 +18,15 @@ public partial class CommandLineArgs : Node
         // Loop through arguments to find the position argument
         foreach (string arg in args)
         {
-            if (windowSettings.TryGetValue(arg, out WindowSettings settings))
-            {
-                // Set the window size
-                DisplayServer.WindowSetSize(settings.Size);
+            if (!windowSettings.TryGetValue(arg, out WindowSettings settings))
+                continue;
 
-                // Set the window position
-                DisplayServer.WindowSetPosition(settings.Position);
-                break;
-            }
+            // Set the window size
+            DisplayServer.WindowSetSize(settings.Size);
+
+            // Set the window position
+            DisplayServer.WindowSetPosition(settings.Position);
+            break;
         }
     }
 
