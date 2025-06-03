@@ -4,7 +4,7 @@ using System;
 using System.Reflection;
 using System.Collections.Generic;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 /// <summary>
 /// Services have a scene lifetime meaning they will be destroyed when the scene changes. Services

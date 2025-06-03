@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using System;
 
-namespace Template.Netcode;
+namespace __TEMPLATE__.Netcode;
 
 /// <summary>
 /// ENetServer and ENetClient both extend from this class.

@@ -2,7 +2,7 @@ using Godot;
 using GodotUtils;
 using System;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 public static class Scene 
 {

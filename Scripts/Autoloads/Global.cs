@@ -1,9 +1,9 @@
 using Godot;
 using System.Threading.Tasks;
 using System;
-using Template.UI;
+using __TEMPLATE__.UI;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 public partial class Global : Node
 {

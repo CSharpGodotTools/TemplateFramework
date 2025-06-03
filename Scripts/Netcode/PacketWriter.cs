@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System;
 
-namespace Template.Netcode;
+namespace __TEMPLATE__.Netcode;
 
 public class PacketWriter : IDisposable
 {

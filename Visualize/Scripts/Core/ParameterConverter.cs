@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 /// <summary>
 /// Utility class for converting provided values to method parameters

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using static Godot.Control;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 /// <summary>
 /// Methods that can be executed manually by pressing a button in-game. Parameters are supported.

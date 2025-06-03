@@ -2,7 +2,7 @@
 using GodotUtils;
 using System.Collections.Generic;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 /// <summary>
 /// This logger shows all messages in game making it easier to debug

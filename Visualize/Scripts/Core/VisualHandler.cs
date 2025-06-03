@@ -2,7 +2,7 @@
 using System;
 using System.Reflection;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 /// <summary>
 /// A set of utility methods for handling the VisualizeAttribute

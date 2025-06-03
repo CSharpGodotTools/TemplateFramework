@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 /// <summary>
 /// Represents a node to be visualized

@@ -8,7 +8,7 @@ using static Godot.Control;
 using GodotUtils;
 using System.Linq;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 /// <summary>
 /// The main core class for the visualizer UI

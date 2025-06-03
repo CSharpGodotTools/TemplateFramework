@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System;
 
-namespace Template.Netcode.Client;
+namespace __TEMPLATE__.Netcode.Client;
 
 // ENet API Reference: https://github.com/SoftwareGuy/ENet-CSharp/blob/master/DOCUMENTATION.md
 public abstract class ENetClient : ENetLow

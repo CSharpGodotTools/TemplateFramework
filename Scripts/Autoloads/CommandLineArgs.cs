@@ -1,7 +1,7 @@
 using Godot;
 using System.Collections.Generic;
 
-namespace Template.UI;
+namespace __TEMPLATE__.UI;
 
 /// <summary>
 /// Handles custom command line arguments set for each instance.

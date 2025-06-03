@@ -2,7 +2,7 @@ using ENet;
 using System.Linq;
 using System.Reflection;
 
-namespace Template.Netcode;
+namespace __TEMPLATE__.Netcode;
 
 /// <summary>
 /// A base class with common functionality for Client and Server packets

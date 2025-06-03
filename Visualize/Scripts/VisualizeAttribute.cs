@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Method)]
 public class VisualizeAttribute : Attribute

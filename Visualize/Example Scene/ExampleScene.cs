@@ -1,7 +1,7 @@
 using Godot;
 using GodotUtils;
 
-namespace Template.Example;
+namespace __TEMPLATE__.Example;
 
 public partial class ExampleScene : Node
 {

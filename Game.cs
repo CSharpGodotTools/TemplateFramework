@@ -1,7 +1,7 @@
 using System;
-using static Template.SceneManager;
+using static __TEMPLATE__.SceneManager;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 public static class Game
 {

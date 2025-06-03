@@ -1,9 +1,9 @@
 using ENet;
 using System.Collections.Generic;
 using System;
-using Template.Netcode.Client;
+using __TEMPLATE__.Netcode.Client;
 
-namespace Template.Netcode;
+namespace __TEMPLATE__.Netcode;
 
 /// <summary>
 /// A packet sent from the server to other client(s)

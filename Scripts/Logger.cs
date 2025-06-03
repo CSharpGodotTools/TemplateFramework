@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 /*
  * This is meant to replace all GD.Print(...) with Logger.Log(...) to make

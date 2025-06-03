@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 public partial class VisualizeAutoload : Node
 {

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 public static partial class VisualControlTypes
 {

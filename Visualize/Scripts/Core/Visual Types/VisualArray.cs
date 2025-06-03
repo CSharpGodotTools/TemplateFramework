@@ -2,7 +2,7 @@
 using System;
 using static Godot.Control;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 public static partial class VisualControlTypes
 {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 [AttributeUsage(AttributeTargets.Class)]
 public class ServiceAttribute : Attribute

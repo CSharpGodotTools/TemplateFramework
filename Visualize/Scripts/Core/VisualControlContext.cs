@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Template;
+namespace __TEMPLATE__;
 
 /// <summary>
 /// Represents the context for a visual control

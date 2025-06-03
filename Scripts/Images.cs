@@ -1,4 +1,4 @@
-namespace Template;
+namespace __TEMPLATE__;
 
 public class Images
 {

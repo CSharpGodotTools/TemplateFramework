@@ -1,6 +1,6 @@
-﻿using Template.Netcode.Client;
+﻿using __TEMPLATE__.Netcode.Client;
 
-namespace Template.Netcode;
+namespace __TEMPLATE__.Netcode;
 
 public interface IGameClientFactory
 {

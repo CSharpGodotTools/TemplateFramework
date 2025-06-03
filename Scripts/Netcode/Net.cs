@@ -1,11 +1,11 @@
 using Godot;
 using System;
 using System.Threading.Tasks;
-using Template.Netcode.Client;
-using Template.Netcode.Server;
-using Template.UI;
+using __TEMPLATE__.Netcode.Client;
+using __TEMPLATE__.Netcode.Server;
+using __TEMPLATE__.UI;
 
-namespace Template.Netcode;
+namespace __TEMPLATE__.Netcode;
 
 public class Net
 {

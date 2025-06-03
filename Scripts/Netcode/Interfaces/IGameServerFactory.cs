@@ -1,6 +1,6 @@
-﻿using Template.Netcode.Server;
+﻿using __TEMPLATE__.Netcode.Server;
 
-namespace Template.Netcode;
+namespace __TEMPLATE__.Netcode;
 
 public interface IGameServerFactory
 {

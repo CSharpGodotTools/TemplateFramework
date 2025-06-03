@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System;
-using Template.Netcode.Server;
+using __TEMPLATE__.Netcode.Server;
 
-namespace Template.Netcode;
+namespace __TEMPLATE__.Netcode;
 
 /// <summary>
 /// A packet sent from the client to the server
