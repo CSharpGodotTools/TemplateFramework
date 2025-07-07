@@ -15,7 +15,20 @@ public static partial class VisualControlTypes
 
         if (context.InitialValue == null)
         {
-            throw new Exception($"[Visualize] Contexts initial value was null for type '{type}'");
+            // Not really sure what side effects this will have but the reason I've done this is because
+            // auto properties cannot have default values so their initial value will always be null.
+            return new VisualControlInfo(
+                new ClassControl(
+                    vboxContainer: vbox,
+                    visualPropertyControls: [],
+                    visualFieldControls: [],
+                    properties: [],
+                    fields: []
+                )
+            );
+
+            // Originally this is all I was doing.
+            //throw new Exception($"[Visualize] Contexts initial value was null for type '{type}'");
         }
 
         BindingFlags flags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance | BindingFlags.DeclaredOnly;
@@ -66,6 +79,15 @@ public static partial class VisualControlTypes
     {
         fieldControls = [];
 
+        // Grab all the real property names, and turn each into the expected backing‑field name ("_" + lowercase‑first‑char + rest)
+        string[] propNames = type.GetProperties(flags).Select(p => p.Name).ToArray();
+
+        HashSet<string> backingFieldNames = new(
+            propNames.Select(n =>
+                "_" + char.ToLowerInvariant(n[0]) + n.Substring(1)
+            )
+        );
+
         // Get all the class fields
         fields = type
             .GetFields(flags)
@@ -73,6 +95,8 @@ public static partial class VisualControlTypes
             .Where(f => !(typeof(Delegate).IsAssignableFrom(f.FieldType)))
             // Exclude fields created by properties
             .Where(f => !f.Name.StartsWith('<') || !f.Name.EndsWith(">k__BackingField"))
+            // Exclude backing fields for properties
+            .Where(f => !backingFieldNames.Contains(f.Name))
             .ToArray();
 
         FilterByVisualizeAttribute(ref fields);
@@ -108,6 +132,8 @@ public static partial class VisualControlTypes
             .Where(m => !(typeof(Delegate).IsAssignableFrom(m.ReturnType)))
             // Exclude auto property methods
             .Where(m => !m.Name.StartsWith("get_") && !m.Name.StartsWith("set_"))
+            // Exclude event add and remove event methods
+            .Where(m => !m.Name.StartsWith("add_") && !m.Name.StartsWith("remove_"))
             // Exclude the override string ToString() method
             .Where(m => m.Name != "ToString")
             .ToArray();
