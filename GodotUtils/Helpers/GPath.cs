@@ -17,17 +17,17 @@ public partial class GPath : Path2D
     }
 
     private PathFollow2D _pathFollow;
-    private Vector2[] _points;
-    private Sprite2D _sprite;
-    private GTween _tween;
-    private float[] _tweenValues;
-    private int _tweenIndex;
-    private TransType _transType = TransType.Sine;
-    private EaseType _easeType = EaseType.Out;
-    private double _animSpeed;
-    private Color _color;
-    private float _width;
-    private int _dashes;
+    private Vector2[]    _points;
+    private Sprite2D     _sprite;
+    private GTween       _tween;
+    private float[]      _tweenValues;
+    private int          _tweenIndex;
+    private TransType    _transType = TransType.Sine;
+    private EaseType     _easeType = EaseType.Out;
+    private double       _animSpeed;
+    private Color        _color;
+    private float        _width;
+    private int          _dashes;
 
     public GPath(Vector2[] points, Color color, int width = 5, int dashes = 0, double animSpeed = 1)
     {

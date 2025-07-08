@@ -6,11 +6,11 @@ namespace __TEMPLATE__;
 
 public static class Scene 
 {
-    public const string MainMenu = "res://Scenes/MenuUI/MainMenu.tscn";
+    public const string MainMenu  = "res://Scenes/MenuUI/MainMenu.tscn";
     public const string ModLoader = "res://Scenes/MenuUI/ModLoader.tscn";
-    public const string Options = "res://Scenes/MenuUI/Options.tscn";
-    public const string Credits = "res://Scenes/MenuUI/Credits.tscn";
-    public const string Game = "res://Genres/2D Top Down/Level.tscn";
+    public const string Options   = "res://Scenes/MenuUI/Options.tscn";
+    public const string Credits   = "res://Scenes/MenuUI/Credits.tscn";
+    public const string Game      = "res://Genres/2D Top Down/Level.tscn";
 }
 
 public static class Prefab 
